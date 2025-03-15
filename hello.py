@@ -87,16 +87,6 @@ if st.button("Predict Delivery Time"):
     prediction = predict_delivery_time(product_category, shipping_method)
     st.success(f"Expected Delivery Time: {prediction} days")
 
-# Sample Data Display
-data = pd.DataFrame({
-    "Movie": ["Star Wars", "Inception", "Avengers"],
-    "Rating": [8.7, 8.8, 8.4]
-})
-st.write("## Sample Data")
-st.write(data)
 
-# Random Chart Data Generation
-chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
-st.bar_chart(chart_data)
 
 
