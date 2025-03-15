@@ -21,11 +21,16 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import numpy as np
+
+# st.write("Hello World")
+# st.write("## This is a H2 Title!")
+# x = st.text_input("Movie", "Star Wars")
 
 # Load the trained model
-model_path = "Week_6_Dependencies/Dependencies/voting_model.pkl"
-with open(model_path, 'rb') as file:
-    model = pickle.load(file)
+# model_path = "Week_6_Dependencies/Dependencies/voting_model.pkl"
+# with open(model_path, 'rb') as file:
+#     model = pickle.load(file)
 
 # Streamlit UI
 st.title("Order to Delivery Time Prediction")
